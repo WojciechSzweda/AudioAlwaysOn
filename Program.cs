@@ -4,7 +4,7 @@ Console.CancelKeyPress += (sender, eArgs) => {
 	eArgs.Cancel = true;
 };
 
-System.Media.SoundPlayer player = new System.Media.SoundPlayer(@".\Silence.wav");
+System.Media.SoundPlayer player = new System.Media.SoundPlayer(@".\Audio\Silence.wav");
 player.PlayLooping();
 
 _quitEvent.WaitOne();
